@@ -1,5 +1,6 @@
 import 'nextra-theme-blog/style.css'
 import Head from 'next/head'
+import '../styles/line-highlight.css' // Yo!!
 
 import '../styles/main.css'
 

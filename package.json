@@ -13,9 +13,11 @@
     "next": "^10.0.0",
     "nextra": "^0.4.3",
     "nextra-theme-blog": "^0.1.4",
+    "prism-react-renderer": "^1.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "rss": "^1.2.2"
+    "rss": "^1.2.2",
+    "styled-components": "^5.2.1"
   },
   "prettier": {
     "arrowParens": "always",

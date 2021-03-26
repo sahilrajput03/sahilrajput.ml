@@ -9,3 +9,7 @@ Visit @ https://sahilrajput.ml
 [Demo - Draft Only](https://demo.vercel.blog/)
 
 [Demo - Author's Personal Blog](https://shud.in/)
+
+## Help
+
+- Change order of title pages by changing their dates, e.g., a page with `date: 2030-03-19` will appear in the left-most side.

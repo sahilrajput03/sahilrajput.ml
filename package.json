@@ -16,6 +16,8 @@
     "prism-react-renderer": "^1.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-progressive-image": "^0.6.0",
+    "react-progressive-image-loading": "^3.0.3",
     "rss": "^1.2.2",
     "styled-components": "^5.2.1"
   },

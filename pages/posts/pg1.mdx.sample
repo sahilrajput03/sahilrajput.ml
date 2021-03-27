@@ -1,15 +1,19 @@
 ---
-title: Testing mdx
+title: Next.js Pages
 date: 2021/3/18
 description: Learn more about Next.js pages.
 tag: web development
 author: You
 ---
 
+import Prism from 'components/Prism.js'
 import Button from 'components/button.js'
-import Prism from "components/Prism";
 
-# Next.js Pages
+# Page 1
+
+## Cool things are happening.
+
+So, what am i talking about..?
 
 <Button>👋 Hello</Button>
 
@@ -21,7 +25,7 @@ const s = 10;//highlight-end
 let m = 23;
 
 const myfun = () => {
-  let something = 'bullshit'
+let something = 'bullshit'
 }
 
 let poke = 23;

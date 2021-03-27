@@ -9,23 +9,51 @@ date: 2021-03-18
 Here's some of my photography.
 
 import Image from 'next/image'
+import ProgressiveImage from 'react-progressive-image'
 
-<Image
+<ProgressiveImage
+  delay={1000}
+  placeholder="/images/photo1_small2.svg"
+  src="/images/photo1.jpg"
+>
+  {(src, loading) => {
+    if (src.includes('http://localhost:3000')) {
+      // ^^ this is not redundant.
+      src = src.slice(21)
+      console.log(src)
+    }
+    return (
+      <img
+        src={src}
+        alt="an image"
+        width={1125}
+        height={750}
+        style={{
+          transition: '1.3s filter linear',
+          filter: `${loading ? 'saturate(0.6);' : ''}`
+          // You may use blur, contrast or saturate for soothing experience later.
+        }}
+      />
+    )
+  }}
+</ProgressiveImage>
+
+<ProgressiveImage
+  delay={1000}
   src="/images/photo2.jpg"
-  alt="Photo"
-  width={1125}
-  height={750}
-  priority
-  className="next-image"
-/>
-[Unsplash ↗ ](https://unsplash.com/photos/WeYamle9fDM)
-
-<Image
-  src="/images/photo.jpg"
-  alt="Photo"
-  width={1125}
-  height={750}
-  priority
-  className="next-image"
-/>
-[Unsplash ↗ ](https://unsplash.com/photos/ndN00KmbJ1c)
+  placeholder="/images/photo2_small2.svg"
+>
+  {(src, loading) => (
+    <img
+      src={src}
+      alt="an image"
+      width={1125}
+      height={750}
+      style={{
+        transition: '1.3s filter linear',
+        filter: `${loading ? 'saturate(0.1)' : ''}`
+          // You may use blur, contrast or saturate for soothing experience later.
+      }}
+    />
+  )}
+</ProgressiveImage>

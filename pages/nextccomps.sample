@@ -1,0 +1,88 @@
+https://css-tricks.com/almanac/properties/f/filter/
+
+import ProgressiveImage from 'react-progressive-image'
+import Image from 'next/image'// i am not using it though.
+// read more @ https://www.npmjs.com/package/react-progressive-image
+// styling amazing blur transition: https://medium.com/@perjansson/a-progressive-image-loader-in-react-f14ae652619d
+// If have time study: https://codepen.io/darajava/pen/GRZzpbB?editors=0110
+// RESOURCE: Convert to black-white same resolution svg images: https://image.online-convert.com/convert-to-svg
+// RESOURCE: Conver to single coloured svg file(:( produces lower resolution of image, so you get to set size explicitly though)): https://picsvg.com/
+<ProgressiveImage
+  delay={1000}
+  placeholder="/images/photo1_small2.svg"
+  src="/images/photo1.jpg"
+>
+  {(src, loading) => {
+    if (src.includes('http://localhost:3000')) {
+      // ^^ this is not redundant.
+      src = src.slice(21)
+      console.log(src)
+    }
+    return (
+      <img
+        src={src}
+        alt="an image"
+        width={1125}
+        height={750}
+        style={{
+          transition: '1.3s filter linear',
+          filter: `${loading ? 'saturate(0.6);' : ''}`
+          // You may use blur, contrast or saturate for soothing experience later.
+        }}
+      />
+    )
+  }}
+</ProgressiveImage>
+
+<ProgressiveImage
+  delay={1000}
+  src="/images/photo2.jpg"
+  placeholder="/images/photo2_small2.svg"
+>
+  {(src, loading) => (
+    <img
+      src={src}
+      alt="an image"
+      width={1125}
+      height={750}
+      style={{
+        transition: '1.3s filter linear',
+        filter: `${loading ? 'saturate(0.1)' : ''}`
+          // You may use blur, contrast or saturate for soothing experience later.
+      }}
+    />
+  )}
+</ProgressiveImage>
+
+
+<Image
+  src="/images/photo2.jpg"
+  alt="Photo"
+  width={1125}
+  height={750}
+  priority
+  className="next-image"
+/>
+
+<Image
+  src="/images/photo1_small2.svg"
+  alt="Photo"
+  width={1125}
+  height={750}
+  priority
+  className="next-image"
+/>
+<Image
+  src="/images/photo1.jpg"
+  alt="Photo"
+  width={1125}
+  height={750}
+  priority
+  className="next-image"
+/>
+
+
+// https://github.com/wcandillon/react-progressive-image-loading
+// this ^^^  is bullshit
+
+// stack answer src: https://stackoverflow.com/a/64026475/10012446

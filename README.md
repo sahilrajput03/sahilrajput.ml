@@ -8,7 +8,7 @@ Visit @ https://sahilrajput.ml
 
 [Demo - Draft Only](https://demo.vercel.blog/)
 
-[Demo - Author's Personal Blog](https://shud.in/)
+[Author's Personal Blog - Nextra](https://shud.in/)
 
 ## Help
 

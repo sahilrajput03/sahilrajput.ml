@@ -31,3 +31,51 @@ let something = 'bullshit'
 let poke = 23;
 `}
 />
+
+
+## From kentcdodds's site:
+
+<ProgressiveImage
+  delay={1000}
+  placeholder="/images/photo1_small2.svg"
+  src="/images/photo1.jpg"
+>
+  {(src, loading) => {
+    if (src.includes('http://localhost:3000')) {
+      // ^^ this is not redundant.
+      src = src.slice(21)
+      console.log(src)
+    }
+    return (
+      <img
+        src={src}
+        alt="an image"
+        width={1125}
+        height={750}
+        style={{
+          transition: 'opacity 500ms ease 0s',
+          // You may use blur, contrast or saturate for soothing experience later.
+        }}
+      />
+    )
+  }}
+</ProgressiveImage>
+
+<ProgressiveImage
+  delay={1000}
+  src="/images/photo2.jpg"
+  placeholder="/images/photo2_small2.svg"
+>
+  {(src, loading) => (
+    <img
+      src={src}
+      alt="an image"
+      width={1125}
+      height={750}
+      style={{
+        transition: 'opacity 500ms ease 0s',
+          // You may use blur, contrast or saturate for soothing experience later.
+      }}
+    />
+  )}
+</ProgressiveImage>

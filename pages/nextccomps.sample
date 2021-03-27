@@ -26,7 +26,7 @@ import Image from 'next/image'// i am not using it though.
         height={750}
         style={{
           transition: '1.3s filter linear',
-          filter: `${loading ? 'saturate(0.6);' : ''}`
+          filter: `${loading ? 'saturate(0.6)' : ''}`
           // You may use blur, contrast or saturate for soothing experience later.
         }}
       />

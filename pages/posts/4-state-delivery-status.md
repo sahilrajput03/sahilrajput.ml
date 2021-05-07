@@ -54,7 +54,6 @@ Because my heart says so...
 
 ~Sahil
 
-🧸︎
 [Edit this article on **Github**](https://github.com/sahilrajput03/sahilrajput.ml/edit/master/pages/posts/4-state-delivery-status.mdx)
 
 [Twitter](https://twitter.com/freakstarrocks)

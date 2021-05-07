@@ -2,8 +2,7 @@
 title: Four stage status of a state
 date: 2021/5/7
 description: Inside of absolute state.
-tag: web development care_for_software
-author: You
+tag: web development care_for_software author: You
 ---
 
 import Prism from "components/Prism";
@@ -18,7 +17,7 @@ Lets start with a simple question.
 
 ## Q. Have you ever noticed when you make a comment in post say on a popular site and you notice its added there and it looks good as you did 🤠︎something. But as soon as you refresh page, you realise IT WASN'T EVEN 🛑︎ REAL
 
-FYI: I am not talking about 👥︎ __facebook__, but mostly every other website, __fb__ has literally invested millions on software alone (open source @ [reactjs](https://github.com/facebook/react) and [react-native](https://github.com/facebook/react-native)) so that your backend doesn't feel bad about. I mean to say subconscious mind 🥝︎.
+FYI: I am not talking about 👥︎ __facebook__, but mostly every other website, __fb__ has literally invested millions on software alone (open source @ [reactjs](https://github.com/facebook/react) and [react-native](https://github.com/facebook/react-native)) so that the experience and the feelings towards facebook remains good in one's subconscious mind🥝︎.
 
 🦑︎Fun fact: If facebook had invested in mobile devices as well, every one of us would definitely had a fb™︎ mobile handset in our hands right now.
 
@@ -41,11 +40,9 @@ That seems really simple and who cares about the software implementation unless 
 I don't know but today I came across some bugs
 
 - **linkedin** shows notifications every 2 seconds in the document title for user messages even after you saw that message. I don't know how many of us even notice this🤨︎.
-
 - If the network is offline posting a comment on **linkedin** post does persist and doesn't show any notification that its in the first stage of state, that creates a falsy assumption to user that its actually posted, but isn't posted actually if network is down for some reason🥺︎.
 
 - My today's **hackerrank** interview exam panel is partially brocken __or what__ ? But they suggest to use their recently developed online IDE which is just a copy of codesandbox IMO 🥵︎.
-
 💓︎ Promotions
 
 Because my heart says so...

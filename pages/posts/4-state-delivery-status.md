@@ -10,11 +10,11 @@ import Prism from "components/Prism";
 
 # Four stage status of a state ?
 
-I am writing this out of tired feelings of some pity behaviour from some popular web apps.
+I am writing this out of tired feelings from some pity behaviour in some popular web apps.
 
 Lets start with a simple question.
 
-🤠︎Note: You don't need to be a person to know 🙈︎ anything of software, or any 💩︎ about framework or software library.
+🤠︎Note: You don't need to be a person to know 🙈︎ anything of software or any 💩︎ about framework or software library.
 
 ## Q. Have you ever noticed when you make a comment in post say on a popular site and you notice its added there and it looks good as you did 🤠︎something. But as soon as you refresh page, you realise IT WASN'T EVEN 🛑︎ REAL
 
@@ -54,6 +54,7 @@ Because my heart says so...
 
 ~Sahil
 
-[🧸︎ Edit this article on **Github**](https://github.com/sahilrajput03/sahilrajput.ml/edit/master/pages/posts/4-state-delivery-status.mdx)
+🧸︎
+[Edit this article on **Github**](https://github.com/sahilrajput03/sahilrajput.ml/edit/master/pages/posts/4-state-delivery-status.mdx)
 
 [Twitter](https://twitter.com/freakstarrocks)

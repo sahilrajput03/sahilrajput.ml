@@ -32,7 +32,7 @@ Have you ever noticed the whatsapp shows you 4 stage status of the state.
 
 When you message somebody with whatsapp, you would have noticed mostly when network isn't very good you see the clock sign ⏲︎ with the message for a few moments. And as soon as the network gets better the sign changes to single ✔︎ grey tick.
 
-Now you know you have done your part and whatsapp servers will deliver that message to your 🧑︎‍🤝︎‍🧑︎ dear one. But after some time when the user at the other end has network signals in the device she/he sees the message, you get to see the double ✔︎✔︎ greyed ticks then. And then comes the 🧿︎final thing what our eyes are most  comfortable  with i.e., double blue links and that notifies us that the user actually has seen the message🦕︎.
+Now you know you have done your part and whatsapp servers will deliver that message to your 🧑︎‍🤝︎‍🧑︎ dear one. But after some time when the user at the other end has network signals in the device she/he sees the message, you get to see the double ✔︎ ✔︎ greyed ticks then. And then comes the 🧿︎final thing what our eyes are most  comfortable  with i.e., double blue links and that notifies us that the user actually has seen the message🦕︎.
 
 That seems really simple and who cares about the software implementation unless you are the one driving such business with such services and earning good amount of money 💰︎💰︎ from that.
 

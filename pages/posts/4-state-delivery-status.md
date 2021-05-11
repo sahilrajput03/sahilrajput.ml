@@ -2,7 +2,8 @@
 title: Four stage status of a state
 date: 2021/5/7
 description: Inside of absolute state.
-tag: web development care_for_software author: You
+tag: web development care_for_software
+author: You
 ---
 
 import Prism from "components/Prism";

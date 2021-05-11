@@ -1,0 +1,94 @@
+.who-am-i-class {
+  background: rgb(50, 205, 50);
+  border-radius: 2rem;
+  padding: 1.3rem;
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  // margin: 1rem 0;
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: sans-serif;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  a,
+  b,
+  i,
+  button,
+  code,
+  img,
+  input,
+  label,
+  span,
+  strong,
+  textarea {
+    display: inline-block;
+    /* 🤸︎ By default a tags are `inline`, making it inline-block allows a tags to have margin-top and margin-bottom. */
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-align: center;
+  }
+
+  * {
+    user-select: none;
+    /* To disable text selection. */
+  }
+}
+
+button {
+  font-size: 3rem;
+  background: none;
+  outline: none;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 80vw;
+  border-radius: 2rem;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+.board {
+  height: 78vh;
+  background: rgba(0, 0, 0, 0.125);
+  display: flex;
+  /** Centering items in board */
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-buttons button {
+  margin: 0.5rem;
+}
+
+.slide {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.person-img {
+  font-size: 5rem;
+}

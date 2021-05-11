@@ -3,6 +3,7 @@ import Head from 'next/head'
 import '../styles/line-highlight.css' // Yo!!
 
 import '../styles/main.css'
+import '../styles/who-am-i.scss'
 
 export default function Nextra({ Component, pageProps }) {
   return (

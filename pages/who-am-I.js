@@ -3,6 +3,7 @@ import useRightLeftArrow from '../components/hooks/useRightLeftArrow'
 import * as Slides from '../components/Slides'
 // 🤑︎  ^^ Actually I am trying to mimic the mechanism nextjs use to render all pages at different routes by deafult, yo!!
 const { log } = console
+log(Slides)
 
 let SlideNames = Object.keys(Slides)
 // log(SlideNames)
@@ -54,7 +55,7 @@ export default function WhoAmI() {
       <section className="board container ">
         {SlideNames.map((Slide, index) => {
           const SlideComponent = Slides[Slide]
-          return <SlideComponent key={index} />
+          return <SlideComponent name={index + 1} key={index} />
         })}
       </section>
       <section className="nav-buttons container row">

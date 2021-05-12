@@ -191,6 +191,8 @@ export const WhatElse = ({ name }) => (
   // 🙏︎ Do expalain that you are a 🤺︎🤺︎ enthuiastic learned.
   // 🔥︎ backend technologies I am comfortable with.
   <SlideTemplate name={name}>
+    <h2>Backend</h2>
+    <div className="spacer1"></div>
     <ul>
       <li>
         <strong>GraphQl Servers and client softwares</strong> like ``Apollo
@@ -340,9 +342,19 @@ export const MongoPostgresRedis = ({ name }) => (
   </SlideTemplate>
 )
 
-export const FrontEndFrameworks = ({ name }) => (
+export const SlideStarter = ({ name }) => (
   <SlideTemplate name={name}>
-    <h1>HTML and vanilla js, React, React Native</h1>
+    <h1>Single Page Applications</h1>
+    <div>
+      Status : <span className="emoji-medium">🔥︎</span>
+    </div>
+  </SlideTemplate>
+)
+
+export const FrontEndFrameworks = ({ name }) => (
+  // 📢︎ Spend atleast 2 minutes here
+  <SlideTemplate name={name}>
+    <h1>React and React Native</h1>
   </SlideTemplate>
 )
 
@@ -388,6 +400,10 @@ export const ThanksSlide = ({ name }) => (
     <h1>Thanks.</h1>
     <div className="spacer1"></div>
     <div className="spacer1"></div>
+    <span>I had less ⏲︎ time to make this.</span>
+    <dev className="spacer1"></dev>
+    <dev className="spacer1"></dev>
+    <dev className="spacer1"></dev>
     <h3> Hope you enjoyed it 🙂︎.</h3>
   </SlideTemplate>
 )

@@ -93,6 +93,13 @@ button:hover {
   justify-content: center;
 }
 
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .container {
   // border: 1px solid #000;
   height: 80%;
@@ -136,7 +143,7 @@ button:hover {
 }
 
 .img001 {
-  width: 28vw;
+  height: 40vh;
 }
 
 .img002 {
@@ -195,6 +202,7 @@ label {
 
 .slide-number {
   // border: 1px solid #000;
+  opacity: 0.7;
   font-size: 0.6rem;
   position: absolute;
   bottom: 0;

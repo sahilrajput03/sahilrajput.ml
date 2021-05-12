@@ -98,8 +98,9 @@ export const WhatCompaniesThinkAboutMe = ({ name }) => (
     <img
       className="img001"
       src={'/images/who-am-i/free-1.gif'}
-      height={500}
-      width="200"
+      // height={500}
+      // width="200"
+      //  these ^^ 🛑︎ doesn't work though.
       alt="I-am-free-image here..."
     />
     <dev className="spacer1"></dev>
@@ -107,8 +108,6 @@ export const WhatCompaniesThinkAboutMe = ({ name }) => (
       And THAT IS WHAT HR's of MOST <i>companies</i> think about ME when I
       explain something like..., "In the last two 2 years, I was doing software
       development at 🐥︎home."
-      <div className="spacer1"></div>
-      <div className="spacer1"></div>
     </h1>
   </SlideTemplate>
 )
@@ -296,6 +295,7 @@ export const MongoPostgresRedis = ({ name }) => (
   // 🙏︎ HERE ARE SOME OF MY db choices.
   // 📢︎ : wonderful, simple, flexible, pretty well.
   <SlideTemplate name={name}>
+    <h2>DATABASES</h2>
     <ul>
       <li>
         <b>Mongo db</b> - No doubt it is the easiest to start db interface
@@ -340,11 +340,18 @@ export const MongoPostgresRedis = ({ name }) => (
   </SlideTemplate>
 )
 
+export const FrontEndFrameworks = ({ name }) => (
+  <SlideTemplate name={name}>
+    <h1>HTML and vanilla js, React, React Native</h1>
+  </SlideTemplate>
+)
+
 export const FrontendThings = ({ name }) => (
   // I use codesandboxes for testing all the softwares..
   // 📢︎ ReactQuery ?? Why is it awesome..!!
   // 📢︎ SWR(a fetching library by nextjs) stands for `Stale while revalidate` a HTTP cache invalidation strategy popularized by HTTP RFC 5861.
   <SlideTemplate name={name}>
+    <h1>Frontend utils</h1>
     <ul>
       <li>
         <strong>ReactQuery</strong> - A powerful library that exposes all the
@@ -366,6 +373,22 @@ export const FrontendThings = ({ name }) => (
       </li>
       <li></li>
     </ul>
+  </SlideTemplate>
+)
+
+export const Docker = ({ name }) => (
+  <SlideTemplate name={name}>
+    <h1>Docker</h1>
+    <span className="emoji-large">🚢︎</span>
+  </SlideTemplate>
+)
+
+export const ThanksSlide = ({ name }) => (
+  <SlideTemplate name={name}>
+    <h1>Thanks.</h1>
+    <div className="spacer1"></div>
+    <div className="spacer1"></div>
+    <h3> Hope you enjoyed it 🙂︎.</h3>
   </SlideTemplate>
 )
 

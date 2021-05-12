@@ -53,7 +53,7 @@ export default function WhoAmI() {
   return (
     <div className="who-am-i-class">
       <div className="board">
-        <section className="container">
+        <section className="container column">
           <div className="">
             {SlideNames.map((Slide, index) => {
               const SlideComponent = Slides[Slide]

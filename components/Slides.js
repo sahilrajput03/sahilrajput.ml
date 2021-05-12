@@ -70,10 +70,11 @@ export const NameAndProfileLinks = ({ name }) => (
 export const WhatIlookLike = ({ name }) => (
   <SlideTemplate name={name}>
     <h1>This is me.</h1>
-    <span>
-      //todo add compressed full-size image here from
-      /e/data/fullsize-photo.jpg.
-    </span>
+    <img
+      className="img002"
+      src={'/images/who-am-i/ProfilePicFullSize-low-size.JPG'}
+      alt="my full size photo here.."
+    />
   </SlideTemplate>
 )
 
@@ -99,12 +100,12 @@ export const WhatCompaniesThinkAboutMe = ({ name }) => (
       src={'/images/who-am-i/free-1.gif'}
       height={500}
       width="200"
-      alt="I am free image here..."
+      alt="I-am-free-image here..."
     />
     <dev className="spacer1"></dev>
     <h1>
-      And THAT IS WHAT MOST <i>companies</i> HR's think about ME when I explain
-      something like..., "In the last two 2 years, I was doing software
+      And THAT IS WHAT HR's of MOST <i>companies</i> think about ME when I
+      explain something like..., "In the last two 2 years, I was doing software
       development at 🐥︎home."
       <div className="spacer1"></div>
       <div className="spacer1"></div>
@@ -115,22 +116,19 @@ export const WhatCompaniesThinkAboutMe = ({ name }) => (
 export const WhatIactuallyDo = ({ name }) => (
   <SlideTemplate name={name}>
     <h1>#Me</h1>
-    <img
-      className="img001"
-      src={'/images/who-am-i/what-i-do-actually.gif'}
-      height={500}
-      width="200"
-      alt="I am free image here..."
-    />
-    <div className="spacer1"></div>
-    <div className="spacer1"></div>
-    <img
-      className="img001"
-      src={'/images/who-am-i/eat-code-sleep.gif'}
-      height={500}
-      width="200"
-      alt="I am free image here..."
-    />
+    <div className="row">
+      <img
+        className="img003"
+        src={'/images/who-am-i/what-i-do-actually.gif'}
+        alt="I am free image here..."
+      />
+      <div className="spacer1-horizontal"></div>
+      <img
+        className="img004"
+        src={'/images/who-am-i/eat-code-sleep.gif'}
+        alt="I am free image here..."
+      />
+    </div>
   </SlideTemplate>
 )
 
@@ -155,7 +153,7 @@ export const ItsPassion = ({ name }) => (
   <SlideTemplate name={name}>
     <h1>I like SOFTWARE DEVELOPMENT more than anything I like to do ...</h1>
     <div className="spacer1" />
-    <h2>
+    <h3>
       Yup, you guessed 🤔︎ it right, its my <i>passion</i>.
       <br />
       <br />
@@ -164,10 +162,8 @@ export const ItsPassion = ({ name }) => (
       <br />
       <div className="spacer1" />
       <div className="spacer1" />
-      <div className="spacer1" />
-      <div className="spacer1" />
       These days I use <i>PopOS+i3wm</i> 💓︎ as OS in my system.
-    </h2>
+    </h3>
   </SlideTemplate>
 )
 
@@ -266,13 +262,17 @@ export const NextJs = ({ name }) => (
         >
           <i>Page</i>{' '}
         </a>{' '}
-        in my source code of{' '}
+        in my source code of this website at{' '}
         <a
           target="_blank"
           href="https://github.com/sahilrajput03/sahilrajput.ml"
         >
-          www.sahilrajput.ml
+          github.com/sahilrajput03/sahilrajput.ml
         </a>
+        <br />
+        <br />
+        FYI: React docs at <i>reactjs.org</i> recommends nextjs solution as the
+        best 🦁︎ in class solution presently.
       </li>
       <br />
     </ul>
@@ -341,6 +341,9 @@ export const MongoPostgresRedis = ({ name }) => (
 )
 
 export const FrontendThings = ({ name }) => (
+  // I use codesandboxes for testing all the softwares..
+  // 📢︎ ReactQuery ?? Why is it awesome..!!
+  // 📢︎ SWR(a fetching library by nextjs) stands for `Stale while revalidate` a HTTP cache invalidation strategy popularized by HTTP RFC 5861.
   <SlideTemplate name={name}>
     <ul>
       <li>
@@ -354,7 +357,13 @@ export const FrontendThings = ({ name }) => (
         </a>{' '}
         for maintaining it as OSS.{' '}
       </li>
-      <li></li>
+      <br />
+      <li>
+        <b>SWR</b> - An amazinng data fetching solutions which is simplest in
+        nautre as compared to other solutions. Testing SWR and experimenting
+        with SWR makes me think why isn't this bundled with react itself for
+        fetching.
+      </li>
       <li></li>
     </ul>
   </SlideTemplate>

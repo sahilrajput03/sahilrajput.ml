@@ -52,16 +52,32 @@ export default function WhoAmI() {
 
   return (
     <div className="who-am-i-class">
-      <section className="board container ">
-        {SlideNames.map((Slide, index) => {
-          const SlideComponent = Slides[Slide]
-          return <SlideComponent name={index + 1} key={index} />
-        })}
-      </section>
-      <section className="nav-buttons container row">
-        <button onClick={prev}>👈🏻</button>
-        <button onClick={next}>👉🏻</button>
-      </section>
+      <div className="board">
+        <section className="container">
+          <div className="">
+            {SlideNames.map((Slide, index) => {
+              const SlideComponent = Slides[Slide]
+              return <SlideComponent name={index + 1} key={index} />
+            })}
+          </div>
+        </section>
+        <section className="nav-buttons row">
+          <button className="hands" onClick={prev}>
+            👈🏻
+          </button>
+          <button
+            onClick={() => {
+              setSlideIndex(1)
+            }}
+          >
+            <span className="emoji-small">🏇︎</span>
+          </button>
+
+          <button className="hands" onClick={next}>
+            👉🏻
+          </button>
+        </section>
+      </div>
     </div>
   )
 }

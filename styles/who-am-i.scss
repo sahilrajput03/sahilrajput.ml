@@ -1,11 +1,14 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 .who-am-i-class {
   background: rgb(50, 205, 50);
+  height: 94vh;
   border-radius: 2rem;
   padding: 1.3rem;
-  margin-top: 1.5rem;
-  margin-right: 1rem;
-  margin-left: 1rem;
-  // margin: 1rem 0;
+  margin: 1.5rem 1rem;
 
   *,
   *::before,
@@ -68,9 +71,21 @@
 }
 
 button {
-  font-size: 3rem;
   background: none;
   outline: none;
+}
+
+button:focus {
+  outline: none;
+  // To make buttons have no outline when in focus.
+}
+
+button:hover {
+  text-shadow: 9px 9px 9px #000;
+}
+
+.hands {
+  font-size: 2.5rem;
 }
 
 .row {
@@ -79,19 +94,28 @@ button {
 }
 
 .container {
-  width: 80vw;
+  // border: 1px solid #000;
+  height: 80%;
+  // width: 80vw;
   border-radius: 2rem;
   margin: 1rem auto;
   padding: 1rem;
 }
 
 .board {
-  height: 78vh;
+  // border: 1px solid #000;
+  height: 100%;
   background: rgba(0, 0, 0, 0.125);
+  border-radius: 2rem;
   display: flex;
+  flex-direction: column;
   /** Centering items in board */
   align-items: center;
   justify-content: center;
+}
+
+.nav-buttons {
+  // 🛑︎🛑︎🛑︎
 }
 
 .nav-buttons button {
@@ -106,14 +130,32 @@ button {
   align-items: center;
 }
 
+// images..
 .person-img {
   font-size: 5rem;
 }
 
 .img001 {
-  width: 70%;
+  width: 28vw;
 }
 
+.img002 {
+  width: 40vh;
+}
+
+.img003 {
+  height: 23vw;
+}
+
+.img004 {
+  height: 23vw;
+}
+
+.spacer1-horizontal {
+  width: 2rem;
+}
+
+// emojis designs...
 .emoji-very-small {
   font-size: 1.5rem;
 }
@@ -153,8 +195,9 @@ label {
 
 .slide-number {
   // border: 1px solid #000;
+  font-size: 0.6rem;
   position: absolute;
   bottom: 0;
-  left: 47vw;
+  left: 48vw;
   // margin: 3rem;
 }

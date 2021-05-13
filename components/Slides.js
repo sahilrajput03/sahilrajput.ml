@@ -87,13 +87,6 @@ export const WhatIdoActually = ({name}) => {
 	)
 }
 
-export const Slide5 = ({name}) => (
-	<SlideTemplate name={name}>
-		<span className='emoji-medium'>🤠︎</span>
-		<h1>Surprisingly there's a fun thing in that !</h1>
-	</SlideTemplate>
-)
-
 export const WhatCompaniesThinkAboutMe = ({name}) => (
 	<SlideTemplate name={name}>
 		<img

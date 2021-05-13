@@ -272,7 +272,7 @@ export const NextJs = ({name}) => (
 
 export const HowGoodIamWithNextJs = ({name}) => (
 	<SlideTemplate name={name}>
-		<h1>Enought of talking about Next.Js</h1>
+		<h1>More about Next.js from me ? </h1>
 		Check out my <i>testing-nextjs-examples</i> repository at{' '}
 		<a
 			target='_blank'

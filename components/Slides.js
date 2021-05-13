@@ -91,8 +91,8 @@ export const WhatCompaniesThinkAboutMe = ({name}) => (
 		/>
 		<dev className='spacer1'></dev>
 		<h1>
-			And THAT IS WHAT HR's of MOST <i>companies</i> think about ME when I
-			explain something like..., "In the last two 2 years, I was doing software
+			THATS WHAT HR's of MOST <i>companies</i> think about ME when I explain
+			something like..., "In the last two 2 years, I was doing software
 			development at 🐥︎home."
 		</h1>
 	</SlideTemplate>

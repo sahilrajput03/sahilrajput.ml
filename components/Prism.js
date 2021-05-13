@@ -1,8 +1,8 @@
 import React from 'react'
-import Highlight, { defaultProps } from 'prism-react-renderer'
+import Highlight, {defaultProps} from 'prism-react-renderer'
 import theme from 'prism-react-renderer/themes/nightOwl'
-import { PreOriginal as Pre } from './Pre'
-import { highlightLine } from './util'
+import {PreOriginal as Pre} from './Pre'
+import {highlightLine} from './util'
 
 let exampleCode1 = `
 (function someDemo() {
@@ -27,35 +27,35 @@ let l = 20;
 let m = 40;
 `.trim()
 
-const Prism = ({ code }) => {
-  // beware you should not use children prop, otherwise you get weird error like, unterminate string shit..!!!
-  const inputCode = code.trim() // this is in use....
-  return (
-    <Highlight {...defaultProps} theme={theme} code={inputCode} language="jsx">
-      {({ className, style, tokens, getLineProps, getTokenProps }) => (
-        <Pre className={className} style={style}>
-          {tokens.map((line, i) => {
-            const lineProps = getLineProps({ line, key: i })
-            const shouldExclude = highlightLine(line, lineProps)
-            return !shouldExclude ? (
-              <div {...lineProps} key={i}>
-                {line.map((token, key) => (
-                  <span {...getTokenProps({ token, key })} />
-                ))}
-              </div>
-            ) : null
-            // return (
-            //   <div {...getLineProps({ line, key: i })}>
-            //     {line.map((token, key) => (
-            //       <span {...getTokenProps({ token, key })} />
-            //     ))}
-            //   </div>
-            // );
-          })}
-        </Pre>
-      )}
-    </Highlight>
-  )
+const Prism = ({code}) => {
+	// beware you should not use children prop, otherwise you get weird error like, unterminate string shit..!!!
+	const inputCode = code.trim() // this is in use....
+	return (
+		<Highlight {...defaultProps} theme={theme} code={inputCode} language='jsx'>
+			{({className, style, tokens, getLineProps, getTokenProps}) => (
+				<Pre className={className} style={style}>
+					{tokens.map((line, i) => {
+						const lineProps = getLineProps({line, key: i})
+						const shouldExclude = highlightLine(line, lineProps)
+						return !shouldExclude ? (
+							<div {...lineProps} key={i}>
+								{line.map((token, key) => (
+									<span {...getTokenProps({token, key})} />
+								))}
+							</div>
+						) : null
+						// return (
+						//   <div {...getLineProps({ line, key: i })}>
+						//     {line.map((token, key) => (
+						//       <span {...getTokenProps({ token, key })} />
+						//     ))}
+						//   </div>
+						// );
+					})}
+				</Pre>
+			)}
+		</Highlight>
+	)
 }
 
 export default Prism

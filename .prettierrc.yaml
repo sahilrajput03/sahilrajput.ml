@@ -1,5 +1,10 @@
-trailingComma: "es5"
+trailingComma: 'es5'
 tabWidth: 2
-semi: false
-singleQuote: true
 bracketSpacing: false
+semi: false
+# ^^ This is for semicolon.
+singleQuote: true
+# ^^ This rule doesn't specify for jsx.
+jsxSingleQuote: true
+# ^^ This rule specify for jsx only.
+useTabs: true

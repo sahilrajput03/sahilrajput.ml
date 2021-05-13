@@ -1,10 +1,10 @@
 .highlight-line {
-  background-color: rgb(25, 63, 129);
-  display: block;
-  overflow: hidden; /* Hide scrollbars, from w3schools */
-  margin-right: -1em;
-  margin-left: -1em;
-  padding-right: 1em;
-  padding-left: 0.75em;
-  border-left: 0.3em solid #f99;
+	background-color: rgb(25, 63, 129);
+	display: block;
+	overflow: hidden; /* Hide scrollbars, from w3schools */
+	margin-right: -1em;
+	margin-left: -1em;
+	padding-right: 1em;
+	padding-left: 0.75em;
+	border-left: 0.3em solid #f99;
 }

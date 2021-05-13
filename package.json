@@ -1,32 +1,26 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "scripts": {
-    "dev": "next",
-    "build": "node ./scripts/gen-rss.js && next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "gray-matter": "^4.0.2",
-    "next": "^10.0.0",
-    "nextra": "^0.4.3",
-    "nextra-theme-blog": "^0.1.4",
-    "prism-react-renderer": "^1.2.0",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-progressive-image": "^0.6.0",
-    "react-progressive-image-loading": "^3.0.3",
-    "rss": "^1.2.2",
-    "sass": "^1.32.12",
-    "styled-components": "^5.2.1"
-  },
-  "prettier": {
-    "arrowParens": "always",
-    "singleQuote": true,
-    "tabWidth": 2,
-    "trailingComma": "none",
-    "semi": false
-  }
+	"name": "portfolio",
+	"version": "1.0.0",
+	"main": "index.js",
+	"license": "MIT",
+	"scripts": {
+		"dev": "next",
+		"build": "node ./scripts/gen-rss.js && next build",
+		"start": "next start",
+		"prettier-fix": "prettier --write ."
+	},
+	"dependencies": {
+		"gray-matter": "^4.0.2",
+		"next": "^10.0.0",
+		"nextra": "^0.4.3",
+		"nextra-theme-blog": "^0.1.4",
+		"prism-react-renderer": "^1.2.0",
+		"react": "^16.13.1",
+		"react-dom": "^16.13.1",
+		"react-progressive-image": "^0.6.0",
+		"react-progressive-image-loading": "^3.0.3",
+		"rss": "^1.2.2",
+		"sass": "^1.32.12",
+		"styled-components": "^5.2.1"
+	}
 }

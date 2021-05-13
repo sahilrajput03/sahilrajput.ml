@@ -1,190 +1,190 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 .who-am-i-class {
-  background: rgb(50, 205, 50);
-  height: 94vh;
-  border-radius: 2rem;
-  padding: 1.3rem;
-  margin: 1.5rem 1rem;
+	background: rgb(50, 205, 50);
+	height: 94vh;
+	border-radius: 2rem;
+	padding: 1.3rem;
+	margin: 1.5rem 1rem;
 
-  *,
-  *::before,
-  *::after {
-    box-sizing: border-box;
-    border: 0;
-    margin: 0;
-    padding: 0;
-    outline: 0;
-  }
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box;
+		border: 0;
+		margin: 0;
+		padding: 0;
+		outline: 0;
+	}
 
-  img {
-    max-width: 100%;
-    border-radius: 1rem;
-  }
+	img {
+		max-width: 100%;
+		border-radius: 1rem;
+	}
 
-  a,
-  b,
-  i,
-  button,
-  code,
-  img,
-  input,
-  label,
-  span,
-  strong,
-  textarea {
-    display: inline-block;
-    /* 🤸︎ By default a tags are `inline`, making it inline-block allows a tags to have margin-top and margin-bottom. */
-  }
+	a,
+	b,
+	i,
+	button,
+	code,
+	img,
+	input,
+	label,
+	span,
+	strong,
+	textarea {
+		display: inline-block;
+		/* 🤸︎ By default a tags are `inline`, making it inline-block allows a tags to have margin-top and margin-bottom. */
+	}
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    text-align: center;
-  }
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		text-align: center;
+	}
 
-  h1 {
-    font-size: 2.5rem;
-    font-weight: 900;
-  }
+	h1 {
+		font-size: 2.5rem;
+		font-weight: 900;
+	}
 
-  h2 {
-    font-size: 2rem;
-    font-weight: 700;
-  }
+	h2 {
+		font-size: 2rem;
+		font-weight: 700;
+	}
 
-  h3 {
-    font-size: 1.8rem;
-    font-weight: 500;
-  }
+	h3 {
+		font-size: 1.8rem;
+		font-weight: 500;
+	}
 
-  * {
-    user-select: none;
-    /* To disable text selection. */
-  }
+	* {
+		user-select: none;
+		/* To disable text selection. */
+	}
 }
 
 button {
-  background: none;
-  outline: none;
+	background: none;
+	outline: none;
 }
 
 button:focus {
-  outline: none;
-  // To make buttons have no outline when in focus.
+	outline: none;
+	// To make buttons have no outline when in focus.
 }
 
 button:hover {
-  text-shadow: 9px 9px 9px #000;
+	text-shadow: 9px 9px 9px #000;
 }
 
 .hands {
-  font-size: 2.5rem;
+	font-size: 2.5rem;
 }
 
 .row {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .column {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .container {
-  // border: 1px solid #000;
-  height: 80%;
-  // width: 80vw;
-  border-radius: 2rem;
-  margin: 1rem auto;
-  padding: 1rem;
+	// border: 1px solid #000;
+	height: 80%;
+	// width: 80vw;
+	border-radius: 2rem;
+	margin: 1rem auto;
+	padding: 1rem;
 }
 
 .board {
-  // border: 1px solid #000;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.125);
-  border-radius: 2rem;
-  display: flex;
-  flex-direction: column;
-  /** Centering items in board */
-  align-items: center;
-  justify-content: center;
+	// border: 1px solid #000;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.125);
+	border-radius: 2rem;
+	display: flex;
+	flex-direction: column;
+	/** Centering items in board */
+	align-items: center;
+	justify-content: center;
 }
 
 .nav-buttons {
-  // 🛑︎🛑︎🛑︎
+	// 🛑︎🛑︎🛑︎
 }
 
 .nav-buttons button {
-  margin: 0.5rem;
+	margin: 0.5rem;
 }
 
 .slide {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 // images..
 .person-img {
-  font-size: 5rem;
+	font-size: 5rem;
 }
 
 .img001 {
-  height: 40vh;
+	height: 40vh;
 }
 
 .img002 {
-  width: 40vh;
+	width: 40vh;
 }
 
 .img003 {
-  height: 23vw;
+	height: 23vw;
 }
 
 .img004 {
-  height: 23vw;
+	height: 23vw;
 }
 
 .spacer1-horizontal {
-  width: 2rem;
+	width: 2rem;
 }
 
 // emojis designs...
 .emoji-very-small {
-  font-size: 1.5rem;
+	font-size: 1.5rem;
 }
 
 .emoji-small {
-  font-size: 2rem;
+	font-size: 2rem;
 }
 
 .emoji-medium {
-  font-size: 4rem;
+	font-size: 4rem;
 }
 
 .emoji-large {
-  font-size: 6rem;
+	font-size: 6rem;
 }
 
 a {
-  color: blue;
+	color: blue;
 }
 
 .right-align {
-  text-align: right;
+	text-align: right;
 }
 
 // .footer {
@@ -192,20 +192,20 @@ a {
 // }
 
 label {
-  font-size: 1.255rem;
-  font-style: italic;
+	font-size: 1.255rem;
+	font-style: italic;
 }
 
 .spacer1 {
-  height: 2rem;
+	height: 2rem;
 }
 
 .slide-number {
-  // border: 1px solid #000;
-  opacity: 0.7;
-  font-size: 0.6rem;
-  position: absolute;
-  bottom: 0;
-  left: 48vw;
-  // margin: 3rem;
+	// border: 1px solid #000;
+	opacity: 0.7;
+	font-size: 0.6rem;
+	position: absolute;
+	bottom: 0;
+	left: 48vw;
+	// margin: 3rem;
 }

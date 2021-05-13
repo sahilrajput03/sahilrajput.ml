@@ -79,14 +79,6 @@ export const WhatIlookLike = ({name}) => (
 	</SlideTemplate>
 )
 
-export const WhatIdoActually = ({name}) => {
-	return (
-		<SlideTemplate name={name}>
-			<h1>What do I do 🤐︎ ?</h1>
-		</SlideTemplate>
-	)
-}
-
 export const WhatCompaniesThinkAboutMe = ({name}) => (
 	<SlideTemplate name={name}>
 		<img
@@ -122,16 +114,6 @@ export const WhatIactuallyDo = ({name}) => (
 				alt='I am free image here...'
 			/>
 		</div>
-	</SlideTemplate>
-)
-
-export const AlwaysFunExplainingAboutMe = ({name}) => (
-	<SlideTemplate name={name}>
-		<h1>
-			That wasn't a joke and its always a FUN 🙂︎ THING to me, that I get a
-			opportunity to explain all the things I have learned in past 2 years
-			🧸EVERY TIME.
-		</h1>
 	</SlideTemplate>
 )
 

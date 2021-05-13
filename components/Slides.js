@@ -79,6 +79,13 @@ export const WhatIlookLike = ({name}) => (
 	</SlideTemplate>
 )
 
+export const ButWhatdoIdo = ({name}) => (
+	<SlideTemplate name={name}>
+		<h1>So, lets get started with exactly 'what I do ?' ..</h1>
+		<span className='emoji-medium'>🚀︎🚀︎ 👨🏼‍🚀︎</span>
+	</SlideTemplate>
+)
+
 export const WhatCompaniesThinkAboutMe = ({name}) => (
 	<SlideTemplate name={name}>
 		<img
@@ -114,13 +121,6 @@ export const WhatIactuallyDo = ({name}) => (
 				alt='I am free image here...'
 			/>
 		</div>
-	</SlideTemplate>
-)
-
-export const ButWhatdoIdo = ({name}) => (
-	<SlideTemplate name={name}>
-		<h1>So, lets get started with exactly 'what I do ?' ..</h1>
-		<span className='emoji-medium'>🚀︎🚀︎ 👨🏼‍🚀︎</span>
 	</SlideTemplate>
 )
 

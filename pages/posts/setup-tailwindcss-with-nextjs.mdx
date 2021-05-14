@@ -18,11 +18,11 @@ npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
 npx tailwindcss init -p #Creates a 'tailwind.config.css' file.
 ```
 
-Src: https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss
+Src:  <a target="_blank" href="https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss">with-tailwincss</a> a nextjs example in official nextjs repo.
 
 WHAT🧸︎ TO DO NOW ?
 
-1.  🔽︎ Open `_app.js` file, remove import of `globals.css` and add below one::
+Step 1:  🔽︎ Open `_app.js` file, remove import of `globals.css` and add below one::
 
 <Prism code={`
 
@@ -30,16 +30,15 @@ WHAT🧸︎ TO DO NOW ?
 
 `} />
 
-2.  🔽︎ Specify below in 'tailwind.config.css' file, for efficient tailwindcss experience::
+Step 2:  🔽︎ Specify below in 'tailwind.config.css' file, for efficient tailwindcss experience::
 
 <Prism code={`
-    mode: 'jit',
-    purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
+mode: 'jit',
+purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
 
 `}/>
 
-3.  🔽︎ 🧪︎ TEST IF TAILWIND WORKS BY deleting everything in `index.js` file and using below instead::
-    import Head from 'next/head'
+Step 3:  🔽︎ 🧪︎ TEST IF TAILWIND WORKS BY deleting everything in `index.js` file and using below code:
 
 <Prism code={`
 import Head from 'next/head'
@@ -62,3 +61,5 @@ export default function Home() {
   )
 }
 `} />
+
+💝︎TIP: USE `CTRL+K` TO SEARCH THROUGHT THE DOCUMENTATION AT <a target="_blank" href="https://tailwindcss.com">tailwindcss.com</a>

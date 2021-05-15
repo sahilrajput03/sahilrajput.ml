@@ -6,6 +6,14 @@ export const PreOriginal = styled.pre`
 	margin: 1em 0;
 	padding: 0.5em;
 	overflow: hidden; /*hide scrollbars ~sahil*/
+	/* Below code hides scrollbar for chrome, safari and opera...🚵︎ ~sahil */
+	::-webkit-scrollbar {
+		display: none;
+	}
+	/* Below code hides scrollbar for IE, edge, firefox...🚵︎ ~sahil */
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+	/* test....🚵︎ ~sahil */
 
 	& .token-line {
 		line-height: 1.3em;

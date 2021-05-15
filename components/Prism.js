@@ -1,7 +1,7 @@
 import React from 'react'
 import Highlight, {defaultProps} from 'prism-react-renderer'
 import theme from 'prism-react-renderer/themes/nightOwl'
-import {PreOriginal as Pre} from './Pre'
+import {PreOriginal} from './Pre'
 import {highlightLine} from './util'
 
 let exampleCode1 = `
@@ -33,7 +33,7 @@ const Prism = ({code}) => {
 	return (
 		<Highlight {...defaultProps} theme={theme} code={inputCode} language='jsx'>
 			{({className, style, tokens, getLineProps, getTokenProps}) => (
-				<Pre className={className} style={style}>
+				<PreOriginal className={className} style={style}>
 					{tokens.map((line, i) => {
 						const lineProps = getLineProps({line, key: i})
 						const shouldExclude = highlightLine(line, lineProps)
@@ -52,7 +52,7 @@ const Prism = ({code}) => {
 						//   </div>
 						// );
 					})}
-				</Pre>
+				</PreOriginal>
 			)}
 		</Highlight>
 	)

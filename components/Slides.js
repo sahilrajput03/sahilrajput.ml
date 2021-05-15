@@ -16,7 +16,7 @@ const SlideTemplate = ({children, name}) => {
 export const GoodEvening = ({name}) => (
 	<SlideTemplate name={name}>
 		<h1>
-			HELLO.. <span className='person-img'>🖐🏻</span>
+			HELLO.. <span className='hello-hand'>🖐🏻</span>
 			<br />
 			Good evening to everyone here !
 		</h1>

@@ -51,7 +51,7 @@ export default function WhoAmI() {
 	})
 
 	return (
-		<div className='who-am-i-class'>
+		<main>
 			<div className='board'>
 				<section className='container column'>
 					<div className=''>
@@ -80,17 +80,82 @@ export default function WhoAmI() {
 			</div>
 
 			<style jsx global>{`
+				// This is a valid comment though.
 				body {
-					// height: 30vh;
-					// ^^ this is causing overflow as seen from firefox inspector.
 					padding: 0;
 					margin: 0;
 					background: rgb(50, 205, 50);
 					color: #333;
 					// this is lighter than black.
-					// This is a valid comment though.
+
+					//
+					//
+					height: 90vh;
+					// padding: 1.3rem;
+					// margin: 1.5rem 1rem;
+				}
+
+				//
+
+				*,
+				*::before,
+				*::after {
+					box-sizing: border-box;
+					border: 0;
+					margin: 0;
+					padding: 0;
+					outline: 0;
+				}
+
+				img {
+					max-width: 100%;
+					border-radius: 1rem;
+				}
+
+				a,
+				b,
+				i,
+				button,
+				code,
+				img,
+				input,
+				label,
+				span,
+				strong,
+				textarea {
+					display: inline-block;
+					// 🤸︎ By default a tags are 'inline', making it inline-block allows a tags to have margin-top and margin-bottom.
+				}
+
+				h1,
+				h2,
+				h3,
+				h4,
+				h5,
+				h6 {
+					text-align: center;
+				}
+
+				h1 {
+					font-size: 2.5rem;
+					font-weight: 900;
+				}
+
+				h2 {
+					font-size: 2rem;
+					font-weight: 700;
+				}
+
+				h3 {
+					font-size: 1.8rem;
+					font-weight: 500;
+				}
+
+				* {
+					user-select: none;
+					// To disable text selection.
 				}
 			`}</style>
-		</div>
+		</main>
 	)
 }

@@ -82,20 +82,15 @@ export default function WhoAmI() {
 			<style jsx global>{`
 				// This is a valid comment though.
 				body {
-					padding: 0;
-					margin: 0;
 					background: rgb(50, 205, 50);
 					color: #333;
-					// this is lighter than black.
-
-					//
-					//
-					height: 90vh;
-					// padding: 1.3rem;
-					// margin: 1.5rem 1rem;
+					// ^^ this is lighter than black.
 				}
-
-				//
+				// Below is just 🤺︎ base-css-code.
+				body {
+					padding: 0;
+					margin: 0;
+				}
 
 				*,
 				*::before,

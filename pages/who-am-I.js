@@ -78,6 +78,19 @@ export default function WhoAmI() {
 					</button>
 				</section>
 			</div>
+
+			<style jsx global>{`
+				body {
+					// height: 30vh;
+					// ^^ this is causing overflow as seen from firefox inspector.
+					padding: 0;
+					margin: 0;
+					background: rgb(50, 205, 50);
+					color: #333;
+					// this is lighter than black.
+					// This is a valid comment though.
+				}
+			`}</style>
 		</div>
 	)
 }

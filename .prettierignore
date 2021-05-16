@@ -2,4 +2,6 @@
 #The format of .prettierignore is same as .gitignore syntax. src:https://prettier.io/docs/en/ignore.html
 #gitignore syntax: https://git-scm.com/docs/gitignore#_pattern_format 
 
+**/posts
+# ^^ This is done intentionally as I don't like when pretteir forats my posts written in .md or .mdx files as I use <Prism> component to pass code to it, and prettier's formatting behaviour is really weird in those template literals. 🔐︎
 pages/posts/setup-tailwindcss-with-nextjs.mdx

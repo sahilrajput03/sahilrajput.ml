@@ -4,6 +4,9 @@ import theme from 'prism-react-renderer/themes/nightOwl'
 import {PreOriginal} from './Pre'
 import {highlightLine} from './util'
 
+// See how kent uses his setup with prism-react-renderer
+// https://github.com/kentcdodds/old-kentcdodds.com/blob/7a3101a751513ad5864bf4d7cd54ec7dd6d2268e/src/components/mdx/code.js
+
 let exampleCode1 = `
 (function someDemo() {
   // highlight-start

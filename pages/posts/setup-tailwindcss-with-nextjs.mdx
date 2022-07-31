@@ -10,13 +10,17 @@ import Prism from 'components/Prism'
 
 # Setup tailwindcss with nextjs superfast
 
-```
+<Prism language='bash' code={`
+
 npx create-next-app my-tailwind-setup
 cd my-tailwind-setup
 
-npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
-npx tailwindcss init -p #Creates a 'tailwind.config.css' file.
-```
+npm install -D tailwindcss@latest postcss@latest autoprefixer@latest // highlight-line
+
+# Create a 'tailwind.config.css' file.
+npx tailwindcss init -p  // highlight-line
+
+`} />
 
 Src:  <a target="_blank" href="https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss">with-tailwincss</a> a nextjs example in official nextjs repo.
 

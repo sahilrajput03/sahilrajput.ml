@@ -27,11 +27,19 @@ let l = 20;
 let m = 40;
 `.trim()
 
-const Prism = ({code}) => {
+const Prism = ({code, language}) => {
 	// beware you should not use children prop, otherwise you get weird error like, unterminate string shit..!!!
 	const inputCode = code.trim() // this is in use....
+	// Below line hightlight examples work superb as well!
+	// const inputCode = exampleCode1.trim() // this is in use....
+	// const inputCode = exampleCode2.trim() // this is in use....
 	return (
-		<Highlight {...defaultProps} theme={theme} code={inputCode} language='jsx'>
+		<Highlight
+			{...defaultProps}
+			theme={theme}
+			code={inputCode}
+			language={language || 'jsx'}
+		>
 			{({className, style, tokens, getLineProps, getTokenProps}) => (
 				<PreOriginal className={className} style={style}>
 					{tokens.map((line, i) => {

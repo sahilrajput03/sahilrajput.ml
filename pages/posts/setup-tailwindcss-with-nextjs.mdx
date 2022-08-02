@@ -10,6 +10,11 @@ import Prism from 'components/Prism'
 
 # Setup tailwindcss with nextjs superfast
 
+- Official Docs: <a target="_blank" href='https://tailwindcss.com/docs/guides/nextjs'>Install Tailwind CSS with Next.js</a>
+- NextJS Expample App:  <a target="_blank" href="https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss">with-tailwincss</a> a nextjs example in official nextjs repo.
+
+🔽︎ Step 1: Install dependencies:
+
 <Prism language='bash' code={`
 
 npx create-next-app my-tailwind-setup
@@ -22,11 +27,9 @@ npx tailwindcss init -p  // highlight-line
 
 `} />
 
-Src:  <a target="_blank" href="https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss">with-tailwincss</a> a nextjs example in official nextjs repo.
+Do either <i>Step 2A</i> or <i>Step 2B</i>
 
-WHAT🧸︎ TO DO NOW ?
-
-Step 1:  🔽︎ Open `_app.js` file, remove import of `globals.css` and add below one::
+🔽︎ Step 2 A:   Open `_app.js` file, remove import of `globals.css` and add below one::
 
 <Prism code={`
 
@@ -34,7 +37,20 @@ Step 1:  🔽︎ Open `_app.js` file, remove import of `globals.css` and add bel
 
 `} />
 
-Step 2:  🔽︎ Specify below in 'tailwind.config.css' file, for efficient tailwindcss experience::
+🔽︎ Step 2 B: Open `styles/global.css` file, remove import of `globals.css` and add below one::
+
+<Prism language='css' code={`
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+<!-- Add other css if you want below -->
+.my-claass {
+  color: deeppink;
+}
+`} />
+
+🔽︎ Step 3: Specify below in 'tailwind.config.css' file, for efficient tailwindcss experience::
 
 <Prism code={`
 mode: 'jit',
@@ -42,7 +58,7 @@ purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
 
 `}/>
 
-Step 3:  🔽︎ 🧪︎ TEST IF TAILWIND WORKS BY deleting everything in `index.js` file and using below code:
+🔽︎ Step 4:  🧪︎ TEST IF TAILWIND WORKS BY deleting everything in `index.js` file and using below code:
 
 <Prism code={`
 import Head from 'next/head'

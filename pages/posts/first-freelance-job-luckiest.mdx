@@ -1,0 +1,83 @@
+---
+title: First Freelance Job - F*cked the scammer
+date: 2021/3/26
+description: I am luckiest person, destroyed massive scammer
+tag: freelancing, scam, scammer busted
+author: Sahil Rajput
+---
+
+import Prism from 'components/Prism'
+
+#  First Freelance Job - F*cked the scammer
+
+Today is 16 Sep, 2022 and I am never gonna forget this day in my life.
+
+But why? 
+<br/>I was actively looking for remote job (freelancer work) from past 2 months and then one day, I got an email from a guy *Eddie Han* as shown here
+
+![](/first_freelancing_1.png)
+
+Quite impressive, huh? By the way you can watch the [more impressive video here](https://youtu.be/G3ncpfG-HG4).
+
+Did you notice the gesture of second email they sent? Scamming is art though, but it ain't a scam yet (*atleast thats what I thought in that moment*).
+
+So, I followed up like that
+
+![](/first_freelancing_2.png)
+
+and I talked to this guy *Jimmy* on skype via the invitation and he asked if I can make their chat application and make a video of the final output to show it to him just to prove the skillset for the job. And I did same, it took 4 days to complete the chat feature along with UI design from the figma design he shared with me. Now the chat feature worked as expected (pretty hard task to do as first task webdev job though).
+<br/>
+And Jimmy was happy with the video I send him and the design quality. So we agreed to have call and it could be the fastest call in the history of getting any job becoz we discussed only one thing, yes you got it right! SALARY. And I chose to ask him what is the average salary for the fullstack developer these days. And he replied in a confident manner that *"I hire lots of developers and I think if we give $1k for first month would that be good?* and *And we'll raise it $2k/month after 1st month."* and I was calculating the money in native currency and he said you can take time to decide. And withing 5 mins I messaged him that I accept the offer.
+
+So fast forward to this day, 16 Sep, 2022.
+
+I am feeling like I have worked and pushed my limits to work on this project with my max potential. And yes, I actually did research about the company, the person *Jimmy Chae* found everything to be ok. I mean their site looked good: [https://www.cheffy.us/](https://www.cheffy.us) *(actually me and other previous developers who worked with Jimmy before deliberately f\*cked up hosting for all of his running projects only earlier today, so it might not be looking as much prettier right now, completely my fault, but stay right there to hear the scene till that moment).*
+
+**Q. Why would be do that? and how come I found that he's scammer?** *(Spoiler: He's a BIG Scammer)*
+
+I was in constant touch with him on skype and getting what tasks I need do next(precisely for a period of past 24 days). But then I talked to this guy *Aashif Ahamed*. Aashif is backend developer working on the same project, and after talking to him for a while I asked him if he got the salary, and to my surprise he said something shocking i.e., "I have been working for total of 45 days as of today and I haven't got any salary yet, as there's some issue with payment system told by Jimmy. He told me Jimmmy also had a conference with some banker and has given some tracking receipt and the payment is getting delayed.". And I kind of freaked out to know this and thought it is really terrible thing (he' s from Sri Lanka and we all know the situtations there right now).
+
+Then, I thought of contacting previous developers of the project to get some feedback. And I am kinda mad when I do some thing I dont' know why. And I asked for feedback from every single developer who worked on the projects with Jimmy before i.e., [*Cheffy*](https://www.cheffy.us/) and [*Totel*](https://totel.herokuapp.com/). And I mailed every single of them by getting their name and email. *How'd I do this?*
+Using these git log with some funky arguments like that
+<br/>
+
+<Prism language='bash' code={`
+
+git log -s --format='%an %ae' > names_and_emails.txt
+git log -s --format='%an' > names.txt
+git log -s --format='%ae' > emails.txt
+# read whole docs @ https://git-scm.com/docs/git-log
+# inspiration: https://stackoverflow.com/a/29876744
+
+`} />
+
+And not just that, there's more to do here. I created a base template to generate customized email using their names. Few weeks back I leanrned how to write emails and how to make impact on the clients so that people pick your emails first. By using such mini hacks i.e., to use *name* in *Subject* and in the first line of *Body of email* for e.g., *Hello Ariana* puts huge impact on the client. That how the base template looked like
+
+<Prism code={`
+const templateSubject = (name) => \`Hello \${name}, I need some personal advice.\`
+
+const templateBody = (name) => \`
+Hello \${name}, how are you doing?
+I started working on this project Totel with Jimmy Chae and I want to get feedback on this project from your side. And how was your experience working with Jimmy if you can share it.
+--
+Thanks & Regards
+Sahil Rajput
+sahilrajput03@gmail.com
+\`
+`} />
+
+
+*If you want to get complete javascript code which I used to send mail to a list 90+ contacts at once, the code is [here](https://github.com/sahilrajput03/send-emails/blob/main/askFeedback.js).*
+
+***So what could happen after sending emails to 90+ developers of only two projects?***
+
+I got unexpected huge response from these developers and in no time it was clear that *Jimmy Chae* is a big scammer had scammed every single developer who worked with him in past 2.5 years, [see real responses of that email](https://gist.github.com/sahilrajput03/adbe80fc22ec68b8de4abc1a13914b31). So, I realized that, now is the time to play with *Jimmy* and lets expose him or destory him in any possible way. And we did something good, yes we deleted all of his heroku account's apps, pushed new git repositories with a single commit in them. We force the rewrite of the commit history of the repositories on heroku, deleted the repository code where I was pushing the code, and it seems that its impossible for him to recover now.
+
+*Wait.. there's something we recorded while destroying his online heroku account, app hostings, postman apis, postgres db, google cloud project, yes we did screen record while doing all this shit :D*
+
+**So, ready to see the action?**
+<br/> Watch Our Revenge in Action on YouTube: [Scammy Jimmy - #Karma is Boomerang # Revenge](https://www.youtube.com/playlist?list=PLBfwD_NnDB3qglhgY7aNQDX5QiCK0B-HO)
+
+End thoughts: I don't know if this is gonna stop this guy doing these scams or not, but I am happy to live this day having all these developers on conference call on skype and destroying the very works we all did for these projects by our own will.
+
+**Be safe, stay away from such scammers.**

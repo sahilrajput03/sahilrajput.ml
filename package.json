@@ -10,6 +10,7 @@
 		"prettier-fix": "prettier --write ."
 	},
 	"dependencies": {
+		"@giscus/react": "^2.2.0",
 		"gray-matter": "^4.0.2",
 		"next": "^10.0.0",
 		"nextra": "^0.4.3",

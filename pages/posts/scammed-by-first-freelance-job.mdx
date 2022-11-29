@@ -50,14 +50,14 @@ git log -s --format='%ae' > emails.txt
 # read whole docs @ https://git-scm.com/docs/git-log
 # inspiration: https://stackoverflow.com/a/29876744
 
-# Get commit count by email
+# Get commit count by email, Also: Below entries are sorted alphabetically.
 sort names_and_emails.txt | uniq -c | sort
 # Output:
 #  100 FirstName1 LastName abc1@def.com
 #   12 FirstName2 LastName abc2@def.com
 #   50 FirstName3 LastName abc3@def.com
 
-# Get unique account details (name and email), Fyi: Entries are sorted alphabetically.
+# Get unique account details (name and email)
 sort names_and_emails.txt | uniq
 # Output:
 # FirstName LastName abc1@def.com

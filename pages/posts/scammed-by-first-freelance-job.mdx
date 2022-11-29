@@ -9,7 +9,7 @@ author: Sahil Rajput
 import Prism from 'components/Prism'
 import Comments from 'components/Comments'
 
-#  First Freelance Job - F*cked the scammer
+#  Freelance Jobs - Scam?
 
 Today is 16 Sep, 2022 and I am never gonna forget this day in my life.
 
@@ -49,6 +49,20 @@ git log -s --format='%an' > names.txt
 git log -s --format='%ae' > emails.txt
 # read whole docs @ https://git-scm.com/docs/git-log
 # inspiration: https://stackoverflow.com/a/29876744
+
+# Get commit count by email
+sort names_and_emails.txt | uniq -c | sort
+# Output:
+# 50 FirstName1 LastName abc1@def.com
+# 20 FirstName2 LastName abc2@def.com
+# 9 FirstName3 LastName abc3@def.com
+
+# Get unique account details (name and emails)
+sort names_and_emails.txt | uniq
+# Output:
+# FirstName LastName abc1@def.com
+# FirstName LastName abc2@def.com
+# FirstName LastName abc3@def.com
 
 `} />
 

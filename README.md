@@ -2,7 +2,7 @@
 
 This is my personal blog.
 
-Visit @ https://sahilrajput.ml
+Visit: https://blog.sahilrajput.com (Expired: https://sahilrajput.ml)
 
 [Forked from](https://github.com/vercel/next.js/tree/canary/examples/blog)
 
